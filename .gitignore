@@ -1,0 +1,14 @@
+# Editor directories and files
+.idea
+
+# Package Manager
+node_modules
+.pnpm-debug.log*
+
+# Bundle
+dist
+
+# local env files
+*.local
+.eslintcache
+tmp

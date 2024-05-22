@@ -1,0 +1,17 @@
+{
+  "name": "@zxl-ui/components",
+  "version": "1.0.0",
+  "description": "all components are settled here",
+  "main": "index.ts",
+  "module": "index.ts",
+  "unpkg": "index.js",
+  "jsdelivr": "index.js",
+  "peerDependencies": {
+    "vue": "^3.2.0",
+    "element-plus": "^2.7.3"
+  },
+  "types": "index.d.ts",
+  "dependencies": {
+    "@zxl-ui/utils": "workspace:^"
+  }
+}
