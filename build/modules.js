@@ -37,9 +37,6 @@ export const buildModules = async () => {
 
   const bundle = await rollup({
     input, // 配置入口文件
-    output: {
-      exports: "named"
-    },
     plugins: [
       // 配置插件
       VueMacros({
@@ -59,6 +56,7 @@ export const buildModules = async () => {
     // 排除不进行打包的 npm 包，例如 Vue，以便减少包的体积
     external: ["vue", "@vue/shared", "@element-plus/icons-vue", "@vueuse/core", "async-validator", "element-plus"]
   });
+
   // 配置输出文件格式
   bundle.write({
     format: "esm", // 配置输出格式

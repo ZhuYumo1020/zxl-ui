@@ -20,7 +20,10 @@
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
     "docs:serve": "pnpm run -C docs serve",
-    "docs:preview": "vitepress preview docs"
+    "docs:preview": "vitepress preview docs",
+    "changeset": "changeset",
+    "packages-version": "changeset version",
+    "publish": "changeset publish --registry=https://registry.npmjs.com/"
   },
   "keywords": [],
   "author": "",
@@ -62,18 +65,6 @@
   },
   "engines": {
     "node": ">= 18"
-  },
-  "pnpm": {
-    "peerDependencyRules": {
-      "ignoreMissing": [
-        "vite",
-        "react",
-        "react-dom"
-      ]
-    },
-    "patchedDependencies": {
-      "async-validator@4.2.5": "patches/async-validator@4.2.5.patch"
-    }
   },
   "config": {
     "commitizen": {

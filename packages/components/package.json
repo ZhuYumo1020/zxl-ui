@@ -1,6 +1,7 @@
 {
   "name": "@zxl-ui/components",
   "version": "1.0.0",
+  "private": true,
   "description": "all components are settled here",
   "main": "index.ts",
   "module": "index.ts",
