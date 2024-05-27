@@ -12,3 +12,8 @@ dist
 *.local
 .eslintcache
 tmp
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
