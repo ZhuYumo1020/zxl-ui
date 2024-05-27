@@ -9,7 +9,7 @@
   "author": "",
   "main": "index.js",
   "scripts": {
-    "start": "node ./modules.js"
+    "start": "node ./modules.js & node ./copyFiles.js"
   },
   "dependencies": {
     "fs-extra": "^11.2.0",

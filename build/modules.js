@@ -27,6 +27,8 @@ const excludeFiles = files => {
 
 // 模块化打包任务函数
 export const buildModules = async () => {
+  const startTime = performance.now();
+
   const input = excludeFiles(
     await glob("**/*.{js,ts,vue}", {
       cwd: pkgRoot,
@@ -72,5 +74,9 @@ export const buildModules = async () => {
     preserveModulesRoot: epRoot,
     entryFileNames: `[name].cjs` // [name]：入口文件的文件名（不包含扩展名），也就是生产 .cjs 结尾的文件
   });
+
+  const endTime = performance.now();
+  const duration = (endTime - startTime) / 1000; // 计算打包时间（秒）
+  console.log(`构建成功, 耗时 ${duration.toFixed(2)} 秒`);
 };
 buildModules();
